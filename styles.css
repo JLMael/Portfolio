@@ -1,26 +1,3 @@
-
-
-
-
-/* ALL */
-
-
-
-
-:root {
-  --primary-color: #333;
-  --secondary-color: #f4f4f4;
-  --accent-color: #007bff;
-  --text-color: #333;
-  --background-color: #ffffff;
-  --card-background: #f9f9f9;
-  --transition-speed: 0.3s;
-}
-
-*::-webkit-scrollbar {
-  display: none; /* Cache la barre de défilement pour les navigateurs basés sur WebKit */
-}
-
 * {
   margin: 0;
   padding: 0;
@@ -30,43 +7,16 @@
 body {
   font-family: Arial, sans-serif;
   line-height: 1.6;
-  color: var(--text-color);
-  background-color: var(--background-color);
+  color: #333;
   display: flex;
   flex-direction: column;
   min-height: 100vh;
-  overflow: hidden; /* Cache les barres de défilement */
-  overflow-y: scroll; /* Permet de défiler verticalement, mais sans afficher la barre de défilement */
 }
 
 header {
-  background-color: var(--secondary-color);
+  background-color: #f4f4f4;
   padding: 1rem;
   box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-}
-
-
-main {
-  flex: 1;
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 2rem;
-}
-
-
-footer {
-  background-color: var(--primary-color);
-  color: white;
-  text-align: center;
-  padding: 1rem;
-  margin-top: auto;
-  display: table-row;
-}
-
-
-/* NAVBAR */
-nav {
-  position: relative;
 }
 
 nav ul {
@@ -81,73 +31,12 @@ nav li {
 
 nav a {
   text-decoration: none;
-  color: var(--primary-color);
+  color: #333;
   font-weight: bold;
   padding: 0.5rem 1rem;
   border-radius: 5px;
-  transition: all var(--transition-speed) ease;
-  position: relative;
-}
-
-/* New styles for responsive navbar */
-.menu-toggle {
-  display: none;
-  background: none;
-  border: none;
-  font-size: 1.5rem;
-  cursor: pointer;
-  color: var(--primary-color);
-  position: absolute;
-  right: 0;
-  top: 50%;
-  transform: translateY(-50%);
-  z-index: 1001;
   transition: all 0.3s ease;
-  transform-origin: center center; /* Assurez-vous que la rotation se fait au centre */
-}
-
-.menu-toggle.active {
-  color: var(--accent-color);
-  transform: translateY(-50%) rotate(90deg); /* Conservez l'alignement vertical et ajoutez la rotation */
-}
-
-@media screen and (max-width: 768px) {
-  nav {
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-  }
-
-  .menu-toggle {
-    display: block;
-  }
-
-  nav ul {
-    display: none;
-    flex-direction: column;
-    position: absolute;
-    top: 100%; /* Assure que le menu démarre juste sous le header */
-    left: 0;
-    width: 100%;
-    background-color: var(--secondary-color); /* Même couleur que le header */
-    padding: 1rem 0; /* Ajuste le padding pour éviter la scission */
-    box-shadow: none; /* Supprime l'ombre portée pour éviter la scission visuelle */
-    z-index: 1000;
-  }
-
-  nav ul.show {
-    display: flex;
-  }
-
-  nav li {
-    margin: 0.5rem 0;
-    text-align: center;
-  }
-
-  nav a {
-    display: block;
-    padding: 0.5rem;
-  }
+  position: relative;
 }
 
 nav a::after {
@@ -157,12 +46,12 @@ nav a::after {
   height: 2px;
   bottom: 0;
   left: 50%;
-  background-color: var(--primary-color);
-  transition: all var(--transition-speed) ease;
+  background-color: #333;
+  transition: all 0.3s ease;
 }
 
 nav a:hover {
-  color: var(--accent-color);
+  color: #000;
   background-color: rgba(0,0,0,0.05);
 }
 
@@ -171,140 +60,106 @@ nav a:hover::after {
   left: 0;
 }
 
-
-
-
-
-/* BOUTONS */
-
-.btn {
-  display: inline-block;
-  background-color: var(--accent-color);
-  color: white;
-  padding: 0.5rem 1rem;
-  text-decoration: none;
-  border-radius: 5px;
-  transition: all var(--transition-speed) ease;
-  cursor: pointer;
-  border: none;
-  margin-top: 1rem;
-  margin-right: 0.5rem;
-  width: 100%;
-  text-align: center;
-  font-weight: bold;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
-
-.btn:hover {
-  background-color: black;
-  transform: translateY(-2px);
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.15);
-}
-
-.button-container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-top: 1rem;
-}
-
-.button-container .btn {
+main {
   flex: 1;
-  margin: 0 0.25rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
 }
-.button-container .btn:last-child {
-  margin-right: 0;
+
+section {
+  margin-bottom: 3rem;
 }
 
-
-/* PROJETS */
-
-
-
+h1, h2 {
+  margin-bottom: 1rem;
+}
+.maintitle{
+  text-align: center;
+}
 
 .projets-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr); /* Trois colonnes */
+  display: flex;
+  flex-wrap: wrap;
   gap: 2rem;
+  justify-content: center;
 }
 
 .projet-card {
-  background-color: var(--card-background);
+  width: 300px;
+  background-color: #f4f4f4;
   border-radius: 10px;
   overflow: hidden;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  transition: transform var(--transition-speed) ease;
+  transition: transform 0.3s ease;
 }
 
 .projet-card:hover {
-  transform: translateY(-5px);
+  transform: translateY(-10px);
 }
 
-.technologies {
-  display: flex;
-  justify-content: space-around;
-  padding: 1rem;
-  background-color: var(--secondary-color);
-}
-
-.image-text-link {
-  position: relative;
-  display: inline-block;
-  width: 60px;
-  height: 60px;
-  overflow: hidden;
-  border-radius: 50%;
-}
-
-.image-text-link img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  transition: opacity var(--transition-speed) ease;
-}
-
-.image-text-link .hover-text {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: rgba(0, 0, 0, 0.7);
-  color: white;
-  font-size: 12px; /* Réduction de la taille du texte */
-  font-weight: bold;
-  opacity: 0;
-  transition: opacity var(--transition-speed) ease;
-}
-
-
-.image-text-link:hover img {
-  opacity: 0.3;
-}
-
-.image-text-link:hover .hover-text {
-  opacity: 1;
+.projet-card img {
+  width: 33%;
+  height: 100px;
+  object-fit: fill;
 }
 
 .projet-info {
   padding: 1rem;
 }
 
-.projet-info h2 {
-  margin-bottom: 0.5rem;
-  color: var(--primary-color);
-}
-/* Couleur annulé/terminer/en cours.. */
-.status {
-  font-style: italic;
-  color: var(--accent-color);
+.projet-info h3 {
   margin-bottom: 0.5rem;
 }
 
-/* Boite dialogue JS */
+/* .btn {
+  display: inline-block;
+  background-color: #333;
+  color: #fff;
+  padding: 0.5rem 1rem;
+  text-decoration: none;
+  border-radius: 5px;
+  margin-top: 1rem;
+  transition: background-color 0.3s ease;
+  cursor: pointer;
+} */
+ 
+.btn {
+  display: block;
+  background-color: #333;
+  color: #fff;
+  padding: 0.5rem;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+  cursor: pointer;
+  text-align: center;
+  width: 100%; /* Makes the buttons responsive */
+  margin-top: 0.5rem; /* Space between buttons */
+}
+
+.btn:hover {
+  background-color: #555;
+}
+
+.bio {
+  max-width: 800px;
+  margin: 0 auto;
+  line-height: 1.8;
+}
+
+.bio p {
+  margin-bottom: 1rem;
+}
+
+footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 1rem;
+  margin-top: auto;
+}
+
 .modal {
   display: none;
   position: fixed;
@@ -318,9 +173,9 @@ nav a:hover::after {
 }
 
 .modal-content {
-  background-color: var(--background-color);
+  background-color: #f9f9f9;
   margin: 15% auto;
-  padding: 2rem;
+  padding: 20px;
   border-radius: 10px;
   width: 70%;
   max-width: 600px;
@@ -328,7 +183,7 @@ nav a:hover::after {
 }
 
 .close {
-  color: var(--text-color);
+  color: #aaa;
   float: right;
   font-size: 28px;
   font-weight: bold;
@@ -337,177 +192,50 @@ nav a:hover::after {
 
 .close:hover,
 .close:focus {
-  color: var(--accent-color);
+  color: #000;
   text-decoration: none;
-}
-
-
-
-@media screen and (max-width: 1200px) {
-  .projets-grid {
-    grid-template-columns: repeat(2, 1fr); /* Deux colonnes sur écrans moyens */
-  }
-}
-
-@media screen and (max-width: 768px) {
-  .projets-grid {
-    grid-template-columns: 1fr; /* Une colonne sur petits écrans */
-  }
-}
-
-  .technologies {
-    flex-wrap: wrap;
-  }
-
-  .image-text-link {
-    margin-bottom: 0.5rem;
-  }
-
-  /* about.html */
-
-
-  .apropos-section {
-    padding: 2rem 1rem;
-    background-color: var(--card-background);
-    border-radius: 10px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-    margin: auto;
-    max-width: 800px;
-  }
-  .bio {
-    line-height: 1.6;
-  }
-  
-  .bio h3 {
-    color: var(--primary-color);
-    margin-top: 1.5rem;
-  }
-  
-  .bio ul {
-    margin: 1rem 0;
-    padding-left: 1.5rem;
-    list-style-type: disc;
-  }
-  
-  .bio p {
-    margin-bottom: 1rem;
-  }
-  .apropos-section h2 {
-    color: var(--primary-color);
-    font-size: 2rem;
-    margin-bottom: 1rem;
-  }
-  
-  .apropos-section .bio {
-    padding: 1rem;
-  }
-  
-  .apropos-section .bio p {
-    margin-bottom: 1rem;
-  }
-  
-
-  
-
-  /* INDEX / Caroussel */
-
-  #recent-projects {
-  text-align: center;
-  padding: 2rem 0;
-}
-
-.carousel {
-  display: flex;
-  overflow: hidden;
-  position: relative;
-  width: 90%;
-  max-width: 900px; /* Ajuster si nécessaire */
-  height: 165px; /* Ajuster en fonction de la hauteur souhaitée pour le carrousel */
-  margin: 0 auto;
-}
-
-.carousel-inner {
-  display: flex;
-  will-change: transform;
-  animation: scroll 10s linear infinite;
-  
-}
-
-.carousel:hover .carousel-inner {
-  animation-play-state: paused; /* Arrête l'animation au survol du carrousel */
-}
-
-.carousel-item {
-  flex: 0 0 auto;
-  width: 150px; /* Largeur fixe pour les éléments */
-  height: 150px; /* Hauteur fixe pour garder les cercles parfaitement ronds */
-  margin: 0 10px;
-  border-radius: 50%;
-  overflow: hidden;
-  position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Ombre plus prononcée pour l'effet de survol */
-  background-color: var(--card-background);
-  transition: transform var(--transition-speed) ease, box-shadow var(--transition-speed) ease;
-}
-
-.carousel-item:hover {
-  transform: scale(1.1); /* Zoom léger */
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Ombre plus prononcée */
-}
-
-.carousel-title {
-  position: absolute;
-  top: 10px; /* Positionner le titre au-dessus de l'image */
-  width: 100%;
-  text-align: center;
-  font-weight: bold;
-  color: var(--primary-color);
-  background-color: rgba(255, 255, 255, 0.8); /* Fond semi-transparent pour le titre */
-  padding: 0.5rem;
-  border-radius: 0 0 10px 10px; /* Pour arrondir le bas du titre */
-  transition: opacity var(--transition-speed) ease;
-}
-
-.carousel-item:hover .carousel-title {
-  opacity: 1; /* Assure que le titre est visible au survol */
-}
-
-.carousel-item img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover; /* Pour s'assurer que l'image couvre le conteneur sans déformation */
-  border-radius: 50%; /* Pour que les images soient également circulaires */
-  transition: opacity var(--transition-speed) ease;
-}
-
-.view-button {
-  position: absolute;
-  bottom: 10px;
-  left: 50%;
-  transform: translateX(-50%);
-  background-color: var(--accent-color);
-  color: white;
-  border: none;
-  padding: 0.5rem 1rem;
-  border-radius: 5px;
   cursor: pointer;
-  font-weight: bold;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  opacity: 0;
-  transition: opacity var(--transition-speed) ease, transform var(--transition-speed) ease;
-  z-index: 1; /* Assure que le bouton est au-dessus de l'image */
+}
+.image-text-link {
+    position: relative;
+    display: inline-block;
+    width: 33%; /* Ajustez en fonction de la taille souhaitée */
+    height: 100px; /* Ajustez en fonction de la taille souhaitée */
+    overflow: hidden;
+    text-decoration: none;
 }
 
-.carousel-item:hover .view-button {
-  opacity: 1; /* Afficher le bouton au survol */
-  transform: translateX(-50%) translateY(-10px); /* Léger déplacement du bouton vers le haut */
+.image-text-link img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+    transition: opacity 0.3s ease;
 }
 
-/* Animation de défilement */
-@keyframes scroll {
-  0% { transform: translateX(0); }
-  100% { transform: translateX(-100%); } /* Change à -100% pour faire défiler l'intégralité du carrousel */
+.image-text-link .hover-text {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.7); /* Couleur de fond semi-transparente */
+    color: white; /* Couleur du texte */
+    font-size: 16px; /* Taille du texte */
+    font-weight: bold;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    padding: 10px;
+    text-align: center;
+}
+
+.image-text-link:hover img {
+    opacity: 0;
+}
+
+.image-text-link:hover .hover-text {
+    opacity: 1;
 }

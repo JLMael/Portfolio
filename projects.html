@@ -3,9 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mes Projets - Portfolio de Grosa Maël</title>
+    <title>Mon Portfolio - Projets</title>
     <link rel="stylesheet" href="styles.css">
-    <script src="script.js" defer></script>
 </head>
 <body>
     <header>
@@ -16,139 +15,100 @@
                 <li><a href="projects.html">Projets</a></li>
                 <li><a href="contact.html">Contact</a></li>
             </ul>
-            <button class="menu-toggle">☰</button>
         </nav>
     </header>
 
     <main>
         <section id="projets">
-
+            <h2 class="maintitle">Mes projets</h2>
             <div class="projets-grid">
-                <article class="projet-card">
-                    <div class="technologies">
-                        <a href="https://www.typescriptlang.org/docs/" class="image-text-link" target="_blank">
-                            <img src="public/assets/typescript.svg" alt="Logo Typescript" />
-                            <span class="hover-text">Typescript</span>
-                        </a>
-                        <a href="https://www.prisma.io/docs" class="image-text-link" target="_blank">
-                            <img src="public/assets/prisma.png" alt="Logo Prisma" />
-                            <span class="hover-text">Prisma</span>
-                        </a>
-                        <a href="https://tailwindcss.com/" class="image-text-link" target="_blank">
-                            <img src="public/assets/tailwind.svg" alt="Logo Tailwind" />
-                            <span class="hover-text">Tailwind</span>
-                        </a>
-                    </div>
+                <div class="projet-card">
+                  <a href="https://www.typescriptlang.org/docs/" class="image-text-link" target="_blank">
+                    <img src="public/assets/typescript.svg" alt="Typescript">
+                    <span class="hover-text">Typescript</span>
+                </a><a href="https://www.prisma.io/docs" class="image-text-link" target="_blank">
+                  <img src="public/assets/prisma.png" alt="Prisma">
+                  <span class="hover-text">Prisma</span>
+              </a><a href="https://tailwindcss.com/" class="image-text-link" target="_blank">
+                <img src="public/assets/tailwind.svg" alt="Tailwind">
+                <span class="hover-text">Tailwind</span>
+            </a>
                     <div class="projet-info">
-                        <h2>Projet Viet</h2>
-                        <p class="status">(Annulé)</p>
-                        <p>Création d'un site vitrine pour un restaurant Vietnamien, création d'un CMS.</p>
+                        <h3>Projet Viet</h3><h3>(Annulé)</h3>
+                        <p>Création d'un site vitrine pour un réstaurant Vietnamien, création d'un CMS.</p>
                         <button class="btn" data-project="1">En savoir plus</button>
-                        <!-- <a href="https://github.com/JLMael/vietwok" class="btn" target="_blank">Github</a> -->
+                        <a href="https://github.com/JLMael/vietwok" target="_blank"><button class="btn">GitHub</button></a>
                     </div>
-                </article>
-
-                <article class="projet-card">
-                    <div class="technologies">
-                        <a href="https://docs.python.org/3/" class="image-text-link" target="_blank">
-                            <img src="public/assets/python.svg" alt="Logo Python" />
-                            <span class="hover-text">Python</span>
-                        </a>
-                    </div>
+                </div>
+                <div class="projet-card">
+                  <a href="https://docs.python.org/3/" class="image-text-link" target="_blank">
+                    <img src="public/assets/python.svg" alt="Python">
+                    <span class="hover-text">Python</span>
+                </a>
                     <div class="projet-info">
-                        <h2>DofusNoobTraveller</h2>
-                        <p class="status">(Terminé)</p>
-                        <p>Script en Python permettant d'automatiser des actions.</p>
+                        <h3>DofusNoobTraveller</h3><h3>(Terminé)</h3>
+                        <p>Script en Python permettant de changer de fenêtre, de coller et d'appuyer sur entré pour un jeu.</p>
                         <button class="btn" data-project="2">En savoir plus</button>
-                        <!-- <a href="https://github.com/JLMael/DofusNoobTraveller" class="btn" target="_blank">Github</a> -->
+                        <a href="https://github.com/JLMael/DofusNoobTraveller" target="_blank"><button class="btn">GitHub</button></a>
                     </div>
-                </article>
-
-                <article class="projet-card">
-                    <div class="technologies">
-                        <a href="https://www.typescriptlang.org/docs/" class="image-text-link" target="_blank">
-                            <img src="public/assets/typescript.svg" alt="Logo Typescript" />
-                            <span class="hover-text">Typescript</span>
-                        </a>
-                        <a href="https://tailwindcss.com/" class="image-text-link" target="_blank">
-                            <img src="public/assets/tailwind.svg" alt="Logo Tailwind" />
-                            <span class="hover-text">Tailwind</span>
-                        </a>
-                        <a href="https://devdocs.io/css/" class="image-text-link" target="_blank">
-                            <img src="public/assets/CSS.svg" alt="Logo CSS" />
-                            <span class="hover-text">CSS</span>
-                        </a>
-                    </div>
+                </div>
+                <div class="projet-card">
+                  <a href="https://www.typescriptlang.org/docs/" class="image-text-link" target="_blank">
+                    <img src="public/assets/typescript.svg" alt="Typescript">
+                    <span class="hover-text">Typescript</span>
+                </a><a href="https://tailwindcss.com/" class="image-text-link" target="_blank">
+                  <img src="public/assets/tailwind.svg" alt="Tailwind">
+                  <span class="hover-text">Tailwind</span>
+              </a><a href="https://devdocs.io/css/" class="image-text-link" target="_blank">
+                <img src="public/assets/CSS.svg" alt="CSS">
+                <span class="hover-text">CSS</span>
+            </a>
                     <div class="projet-info">
-                        <h2>Projet Snack</h2>
-                        <p class="status">(En cours..)</p>
-                        <p>Site personnel contenant tous les snacks, la carte et les prix autour de chez moi.</p>
+                        <h3>Projet Snack</h3><h3>(En cours..)</h3>
+                        <p>Site personnel contenant tous les snacks,la carte et les prix autour de chez moi.</p>
                         <button class="btn" data-project="3">En savoir plus</button>
-                        <!-- <a href="https://github.com/JLMael/MenuSnack" class="btn" target="_blank">Github</a> -->
+                        <a href="https://github.com/JLMael/MenuSnack" target="_blank"><button class="btn">GitHub</button></a>
                     </div>
-                </article>
-
-                <article class="projet-card">
-                    <div class="technologies">
-                        <a href="https://fr.react.dev/" class="image-text-link" target="_blank">
-                            <img src="public/assets/react.svg" alt="Logo React" />
-                            <span class="hover-text">React</span>
-                        </a>
-                    </div>
-                    <div class="projet-info">
-                        <h2>Fork BotClient</h2>
-                        <p class="status">(Annulé)</p>
-                        <p>Modification de l'aspect d'une application en React pour usage personnel.</p>
-                        <button class="btn" data-project="4">En savoir plus</button>
-                        <!-- <a href="https://github.com/JLMael/BotClient" class="btn" target="_blank">Github</a> -->
-                    </div>
-                </article>
-
-                <article class="projet-card">
-                    <div class="technologies">
-                        <a href="https://developer.mozilla.org/fr/docs/Web/HTML" class="image-text-link" target="_blank">
-                            <img src="public/assets/html.svg" alt="Logo HTML" />
-                            <span class="hover-text">HTML</span>
-                        </a>
-                        <a href="https://developer.mozilla.org/fr/docs/Web/HTML" class="image-text-link" target="_blank">
-                            <img src="public/assets/css.svg" alt="Logo CSS" />
-                            <span class="hover-text">CSS</span>
-                        </a>
-                    </div>
-                    <div class="projet-info">
-                        <h2>Projet potichat</h2>
-                        <p class="status">(Annulé)</p>
-                        <p>Galerie d'image de photo de chat en HTML CSS, premier site avant formation.</p>
-                        <button class="btn" data-project="5">En savoir plus</button>
-                        <!-- <a href="https://github.com/JLMael/lopotichat" class="btn" target="_blank">Github</a> -->
-                    </div>
-                </article>
-
-                <article class="projet-card">
-                    <div class="technologies">
-                        <a href="https://www.typescriptlang.org/docs/" class="image-text-link" target="_blank">
-                            <img src="public/assets/typescript.svg" alt="Logo Typescript" />
-                            <span class="hover-text">Typescript</span>
-                        </a>
-                        <a href="https://tailwindcss.com/" class="image-text-link" target="_blank">
-                            <img src="public/assets/tailwind.svg" alt="Logo Tailwind" />
-                            <span class="hover-text">Tailwind</span>
-                        </a>
-                        <a href="https://devdocs.io/css/" class="image-text-link" target="_blank">
-                            <img src="public/assets/CSS.svg" alt="Logo CSS" />
-                            <span class="hover-text">CSS</span>
-                        </a>
-                    </div>
-                    <div class="projet-info">
-                        <h2>Projet TwitchScraping</h2>
-                        <p class="status">(En cours..)</p>
-                        <p>Scrapping de donnée en vue d'entraîner une LLM, suivit d'une extension Google.</p>
-                        <button class="btn" data-project="6">En savoir plus</button>
-                        <!-- <a href="https://github.com/JLMael/Twitch-Data-Scraping" class="btn" target="_blank">Github</a> -->
-                    </div>
-                </article>
-
-
+                </div>
+                <div class="projet-card">
+                  <a href="https://fr.react.dev/" class="image-text-link" target="_blank">
+                    <img src="public/assets/react.svg" alt="React">
+                    <span class="hover-text">React</span>
+                </a>
+                  <div class="projet-info">
+                      <h3>Fork BotClient</h3><h3>(Annulé)</h3>
+                      <p>Modification de l'aspect d'une application en React pour usage personnel.</p>
+                      <button class="btn" data-project="3">En savoir plus</button>
+                      <a href="https://github.com/JLMael/BotClient" target="_blank"><button class="btn">GitHub</button></a>
+                  </div>
+              </div>
+              <div class="projet-card">
+                <a href="https://developer.mozilla.org/fr/docs/Web/HTML" class="image-text-link" target="_blank">
+                  <img src="public/assets/html.svg" alt="HTML">
+                  <span class="hover-text">HTML</span>
+              </a><a href="https://devdocs.io/css/" class="image-text-link" target="_blank">
+                <img src="public/assets/css.svg" alt="CSS">
+                <span class="hover-text">CSS</span>
+            </a>
+                <div class="projet-info">
+                    <h3>Projet potichat</h3><h3>(Annulé)</h3>
+                    <p>Galerie d'image de photo de chat en HTML CSS, premier site avant formation.</p>
+                    <button class="btn" data-project="3">En savoir plus</button>
+                    <a href="https://github.com/JLMael/lopotichat" target="_blank"><button class="btn">GitHub</button></a>
+                </div>
+            </div>
+            <div class="projet-card">
+              <a href="https://devdocs.io/javascript/" class="image-text-link" target="_blank">
+                <img src="public/assets/javascript.svg" alt="Javascript">
+                <span class="hover-text">JS</span>
+            </a>
+              <div class="projet-info">
+                  <h3>Projet TwitchScraping</h3><h3>(En cours..)</h3>
+                  <p>Scrapping de donnée en vue d'entraîner une LLM, suivit d'une extension Google.</p>
+                  <button class="btn" data-project="3">En savoir plus</button>
+                  <a href="https://github.com/JLMael/Twitch-Data-Scraping" target="_blank"><button class="btn">GitHub</button></a>
+              </div>
+          </div>
             </div>
         </section>
     </main>
@@ -156,7 +116,7 @@
     <div id="modal" class="modal">
         <div class="modal-content">
             <span class="close">&times;</span>
-            <h2 id="modal-title"></h2>
+            <h3 id="modal-title"></h3>
             <p id="modal-description"></p>
         </div>
     </div>
@@ -164,5 +124,7 @@
     <footer>
         <p>&copy; 2024 Grosa Maël. Tous droits réservés.</p>
     </footer>
+    
+    <script src="script.js"></script>
 </body>
 </html>
