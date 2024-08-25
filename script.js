@@ -104,8 +104,6 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 });
 
-// script.js
-
 document.addEventListener("DOMContentLoaded", function () {
   const carouselInner = document.querySelector(".carousel-inner");
 
